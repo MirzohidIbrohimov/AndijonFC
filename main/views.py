@@ -4,6 +4,11 @@ from .serializers import *
 
 
 @api_view(["GET"])
+def get_akademiya_view(request):
+    return Response(AcademySerializer(Academy.objects.all(), many=True).data)
+
+
+@api_view(["GET"])
 def get_banner_view(request):
     return Response(BannerSerializer(Banner.objects.all().order_by('-id')[:3], many=True).data)
 

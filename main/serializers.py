@@ -8,6 +8,12 @@ class BannerSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class AcademySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Academy
+        fields = "__all__"
+
+
 class BannerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Banner_video
@@ -56,9 +62,9 @@ class CoachesSerializers(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class HistorySerializers(serializers.ModelSerializer):
+class ClubSerializers(serializers.ModelSerializer):
     class Meta:
-        model = History
+        model = Club
         fields = "__all__"
 
 

@@ -3,6 +3,7 @@ from .views import *
 
 
 urlpatterns = [
+    path('get-akademiya/', get_akademiya_view),
     path('get-banner/', get_banner_view),
     path('get-banner-video/', get_banner_video_view),
     path('get-players/', get_players_view),
